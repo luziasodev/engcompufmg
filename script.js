@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ], atividades: [
             { nome: 'Monitoria', link: 'arquivos/gaal/Monitoria GAAL.pdf', tipo: 'pdf' }
         ],
-        avaliacoes: [] },
+        avaliacoes: [{nome: '15/04'}, {nome: '22/05'}, {nome: '08/07' },
         { nome: 'Fundamentos de Mecânica', codigo: 'FIS065 OB60', periodo: 2 },
         { nome: 'Laboratório de Circuitos Elétricos I', codigo: 'ELE028 OB30', periodo: 3 },
         { nome: 'Arquitetura e Organização de Computadores II', codigo: 'INUXXX OB60', periodo: 4 },
