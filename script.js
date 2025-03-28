@@ -151,15 +151,15 @@ document.addEventListener('DOMContentLoaded', () => {
         { nome: 'Laboratórios de Projetos III', codigo: 'INUXXX OB60', periodo: 7 },
         { nome: 'Optativa - Núcleo Específico', codigo: 'OP60', periodo: 8 },
         { nome: 'Optativa - Núcleo Específico', codigo: 'OP60', periodo: 9 },
-        { nome: 'Geometria Analítica e Álgebra Linear', codigo: 'MAT038 OB60', periodo: 1, professores: [
+        { nome: 'Geometria Analítica e Álgebra Linear', codigo: 'MAT038 OB60', periodo: 1, professores: [{nome: 'EVANDRO', email: 'evandro@cefetmg.br'}
             
-        ], bibliografia: [
+        ], bibliografia: [{ nome: 'Geometria Analítica e Álgebra Linear - Reginaldo Santos 7a edição 2014', link: '', tipo: 'pdf'}, { nome: 'José L. Boldini 3a edição - Editora Horbra', link: '', tipo: 'pdf'}
         ], materiais: [
             
         ], atividades: [
             { nome: 'Monitoria', link: 'arquivos/gaal/Monitoria GAAL.pdf', tipo: 'pdf' }
         ],
-        avaliacoes: [{nome: '15/04/2025'}, {nome: '22/05/2025'}, {nome: '08/07/2025'}] },
+        avaliacoes: [{nome: '15/04/2025'}, {nome: '22/05/2025'}, {nome: '08/07/2025'}, {nome: '10/07/2025 Suplementar'}, {nome: '15/07/2025 Especial'}] },
         { nome: 'Fundamentos de Mecânica', codigo: 'FIS065 OB60', periodo: 2 },
         { nome: 'Laboratório de Circuitos Elétricos I', codigo: 'ELE028 OB30', periodo: 3 },
         { nome: 'Arquitetura e Organização de Computadores II', codigo: 'INUXXX OB60', periodo: 4 },
