@@ -149,6 +149,7 @@ th {
 #grade-curricular table {
     width: 100%;
     border-collapse: collapse;
+    user-select: none
 }
 
 #grade-curricular th, #grade-curricular td {
@@ -177,6 +178,7 @@ th {
     background-color: #333;
     cursor: pointer;
     border-radius: 5px;
+    user-select: none
 }
 
 .materia-box:hover {
