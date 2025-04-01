@@ -26,10 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
         { nome: "HÉCTOR AZPÚRUA", email: "hector.azpurua@dcc.ufmg.br" },
         { nome: "PEDRO OLMO", email: "olmo@dcc.ufmg.br" },
       ],
-      bibliografia: [],
+      bibliografia: [
+        {
+          nome: "Projeto de Algoritmos com Implementações em Pascal e C",
+          link: "https://www2.dcc.ufmg.br/livros/algoritmos/",
+          tipo: "link",
+        },
+      ],
       materiais: [
         {
-          nome: "Link Pedro Olmo",
+          nome: "Pedro Olmo GitHub",
           link: "https://pedroolmo.github.io/teaching/pds1.html",
           tipo: "link",
         },
@@ -181,13 +187,13 @@ document.addEventListener("DOMContentLoaded", () => {
       bibliografia: [
         {
           nome: "Cálculo, vol. 1. Stewart, James. 7a edição (tradução da 9a ed. norte-americana)",
-          link: "caminho/para/livroA.pdf",
+          link: "arquivos/calc 1/Calculo Volume 1 - Stewart_1_ptbr.pdf",
           tipo: "pdf",
         },
         {
           nome: "Cálculo, vol. 1. Anton, Howard. 10a edição.",
-          link: "https://www.exemplo.com/livroB",
-          tipo: "link",
+          link: "arquivos/calc 1/calculus-10th-edition-anton.pdf",
+          tipo: "pdf",
         },
       ],
       materiais: [
@@ -507,17 +513,23 @@ document.addEventListener("DOMContentLoaded", () => {
       professores: [{ nome: "EVANDRO", email: "evandro@cefetmg.br" }],
       bibliografia: [
         {
-          nome: "Geometria Analítica e Álgebra Linear - Reginaldo Santos 7a edição 2014",
-          link: "",
-          tipo: "pdf",
+          nome: "Um Curso de Geometria Analítica e Álgebra Linear (Julho 2014) - Reginaldo Santos",
+          link: "https://www.dropbox.com/scl/fi/2okvtr6pwawnqvmofpf6o/gaalt0.pdf?rlkey=mo7wdzpko8t16n03j37wkvul2&e=1&dl=0",
+          tipo: "link",
         },
         {
           nome: "José L. Boldini 3a edição - Editora Horbra",
-          link: "",
-          tipo: "pdf",
+          link: "https://www.cin.ufpe.br/~brgccf/archive/Algebra%20Linear%20Boldrini.pdf",
+          tipo: "link",
         },
       ],
-      materiais: [],
+      materiais: [
+        {
+          nome: "Playlist de GAAL",
+          link: "https://youtube.com/playlist?list=PL_AAwUeNMj6Lm3nJNE9b2cfH6ivaPWpGf&si=bmp-Vgd9Ue7WCX5w",
+          tipo: "link",
+        },
+      ],
       atividades: [
         {
           nome: "Monitoria",
@@ -552,11 +564,17 @@ document.addEventListener("DOMContentLoaded", () => {
       codigo: "FIS151 OB30",
       periodo: 1,
       professores: [
-        { nome: `A - RICARDO`, email: `` },
+        { nome: `A - RICARDO WAGNER NUNES`, email: `` },
         { nome: `B - FLAVIO ORLANDO PLENTZ FILHO`, email: `` },
       ],
       bibliografia: [],
-      materiais: [],
+      materiais: [
+        {
+          nome: "Acesso aos materiais da disciplina",
+          link: "https://www.fisica.ufmg.br/ciclo-basico/disciplinas/feb-mecanica/",
+          tipo: "link",
+        },
+      ],
       atividades: [],
       avaliacoes: [],
     },
@@ -724,12 +742,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>🧑‍🏫Professor(es): ${formatarProfessores(
                   materia.professores
                 )}</p>
+                <p>💯Avaliações: ${formatarAvaliacoes(materia.avaliacoes)}</p>
+                <p>📝Atividades: ${formatarMateriais(materia.atividades)}</p>
                 <p>📚Bibliografia: ${formatarMateriais(
                   materia.bibliografia
                 )}</p>
                 <p>📄Materiais: ${formatarMateriais(materia.materiais)}</p>
-                <p>📝Atividades: ${formatarMateriais(materia.atividades)}</p>
-                <p>💯Avaliações: ${formatarAvaliacoes(materia.avaliacoes)}</p>
+                
+                
             `;
       modalContent.innerHTML = detalhes;
       modal.style.display = "block";
